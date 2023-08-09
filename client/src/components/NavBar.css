@@ -1,0 +1,77 @@
+/* NavBar.css */
+:root {
+  --primary-color: #007bff; /* Set the primary color to Bootstrap's primary color */
+}
+
+/* Added spacing to the left of the brand text */
+.navbar-brand {
+  margin-left: 200px;
+}
+
+.sticky-top {
+  top: -150px;
+  transition: .5s;
+}
+
+.navbar {
+  padding: 11px 15px !important; /* Add left and right padding */
+  height: 75px;
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 60px;
+  padding: 0;
+  color: white;
+  outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav {
+    padding: 0 15px;
+    background: var(--primary);
+  }
+
+  /* Remove the left margin of the brand text in mobile view */
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+  }
+}

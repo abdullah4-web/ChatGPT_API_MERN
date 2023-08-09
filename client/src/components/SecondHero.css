@@ -1,0 +1,10 @@
+/* SecondHero.css */
+.hero-header {
+    height: 400px; /* Adjust the height as per your preference */
+  }
+  
+  .hero-image {
+    max-height: 300px; /* Adjust the maximum height of the image */
+    width: auto; /* Maintain aspect ratio */
+  }
+  

@@ -1,0 +1,110 @@
+/* ChatBot.module.css */
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Background color similar to GPT-3.5 chat interface */
+}
+
+.chat-section {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff; /* Chat section background color similar to GPT-3.5 chat interface */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Center the chat section horizontally */
+}
+
+.chat-messages {
+  background-color: #f8f9fa; /* Message background color similar to GPT-3.5 chat interface */
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 80vh; /* Limit the height of the chat messages area */
+}
+
+.chat-message {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.ai-response {
+  background-color: #0fee70; /* Green background color for AI response */
+}
+
+.user-message,
+.ai-message {
+  padding: 10px 15px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #007bff; /* User message background color similar to GPT-3.5 chat interface */
+  color: #fff; /* User message font color similar to GPT-3.5 chat interface */
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.ai-message {
+  background-color: #17e836; /* AI message background color similar to GPT-3.5 chat interface */
+  color: #1a1a1a; /* AI message font color similar to GPT-3.5 chat interface */
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ai-response {
+  background-color: #0fee70;
+}
+
+.send-button {
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  
+  background-color: #007bff; /* Send button background color similar to GPT-3.5 chat interface */
+  color: #fff; /* Send button font color similar to GPT-3.5 chat interface */
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Hover color for the send button */
+}
+
+/* New styles for the search bar */
+.form-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+
+  border-radius: 50px;
+
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+ 
+  outline: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  
+  
+}
+
+.send-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
